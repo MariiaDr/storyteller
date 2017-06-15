@@ -146,9 +146,9 @@
 					<li><a href="#tab-4">Travel</a></li>
 					<li><a href="#tab-5">Paintings</a></li>
 				</ul>
-				            <div id='tab-1'>
+				<div id='tab-1'>
 					<div class="slider3_wrap">
-						<div class="slider3">
+						<div class="slider_tab_1">
 							<div class="slide"><img src="img/temp1.jpg" alt="temp"></div>
 							<div class="slide"><img src="img/temp2.jpg" alt="temp"></div>
 							<div class="slide"><img src="img/temp3.jpg" alt="temp"></div>
@@ -158,7 +158,7 @@
 				</div>
 				<div id='tab-2'>
 					<div class="slider3_wrap">
-						<div class="slider3">
+						<div class="slider_tab_2">
 							<div class="slide"><img src="img/temp1.jpg" alt="temp"></div>
 							<div class="slide"><img src="img/temp2.jpg" alt="temp"></div>
 							<div class="slide"><img src="img/temp3.jpg" alt="temp"></div>
@@ -168,7 +168,7 @@
 				</div>
 				<div id='tab-3'>
 					<div class="slider3_wrap">
-						<div class="slider3">
+						<div class="slider_tab_3">
 							<div class="slide"><img src="img/temp1.jpg" alt="temp"></div>
 							<div class="slide"><img src="img/temp2.jpg" alt="temp"></div>
 							<div class="slide"><img src="img/temp3.jpg" alt="temp"></div>
@@ -178,7 +178,7 @@
 				</div>
 				<div id='tab-4'>
 					<div class="slider3_wrap">
-						<div class="slider3">
+						<div class="slider_tab_4">
 							<div class="slide"><img src="img/temp1.jpg" alt="temp"></div>
 							<div class="slide"><img src="img/temp2.jpg" alt="temp"></div>
 							<div class="slide"><img src="img/temp3.jpg" alt="temp"></div>
@@ -188,7 +188,7 @@
 				</div>
 				            <div id='tab-5'>
 					<div class="slider3_wrap">
-						<div class="slider3">
+						<div class="slider_tab_5">
 							<div class="slide"><img src="img/temp1.jpg" alt="temp"></div>
 							<div class="slide"><img src="img/temp2.jpg" alt="temp"></div>
 							<div class="slide"><img src="img/temp3.jpg" alt="temp"></div>
@@ -405,6 +405,11 @@
 <script src="libs/tab/jquery.tabslet.min.js"></script>
 <!-- bxSlider Javascript file -->
 <script src="libs/slider/jquery.bxslider.min.js"></script>
+<!-- scrol: http://imakewebthings.com/waypoints/api/offset-option/ -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- progressbar: http://jqueryui.com/download/ -->
+<script src="js/jquery-ui.min_custom.js"></script>
+<!-- progressbar: http://jsfiddle.net/chuckcatron/FR2SC/ -->
 <script>
 	 $('.slider').bxSlider({
 	 	slideWidth: 370,
@@ -421,13 +426,44 @@
 	 	minSlides: 1,
 		maxSlides: 1
 	 });
-	  $('.slider3').bxSlider({
+	  $('.slider_tab_1').bxSlider({
 	 	speed:800,
 	 	slideWidth: 440,
 	 	adaptiveHeight: true,
 	 	minSlides: 1,
 		maxSlides: 4
 	 });
+	  $('.slider_tab_2').bxSlider({
+	 	speed:800,
+	 	slideWidth: 440,
+	 	adaptiveHeight: true,
+	 	minSlides: 1,
+		maxSlides: 4
+	 });
+	  $('.slider_tab_3').bxSlider({
+	 	speed:800,
+	 	slideWidth: 440,
+	 	adaptiveHeight: true,
+	 	minSlides: 1,
+		maxSlides: 4
+	 });
+	  $('.slider_tab_4').bxSlider({
+	 	speed:800,
+	 	slideWidth: 440,
+	 	adaptiveHeight: true,
+	 	minSlides: 1,
+		maxSlides: 4
+	 });
+	  $('.slider_tab_5').bxSlider({
+	 	speed:800,
+	 	slideWidth: 440,
+	 	adaptiveHeight: true,
+	 	minSlides: 1,
+		maxSlides: 4
+	 });
+
+
+
 	  $('.slider4').bxSlider({
 	 	slideWidth: 370,
 	 	speed:800,
@@ -436,15 +472,8 @@
 	 	minSlides: 1,
 		maxSlides: 3
 	 });
-</script>
 
-<!-- scrol: http://imakewebthings.com/waypoints/api/offset-option/ -->
-<script src="js/jquery.waypoints.min.js"></script>
-<!-- progressbar: http://jqueryui.com/download/ -->
-<script src="js/jquery-ui.min_custom.js"></script>
-<!-- progressbar: http://jsfiddle.net/chuckcatron/FR2SC/ -->
-<script>
-	$("#progressZone").progressbar({ max: 130 });
+	  $("#progressZone").progressbar({ max: 130 });
 
     var value1 = 0;
 
